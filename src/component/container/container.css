@@ -1,0 +1,65 @@
+
+#container {
+    height: auto;
+    flex: 1 1 auto;
+  }
+  
+.food-menu {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(3, .3fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    overflow-x: hidden;
+    gap: 5%;
+}
+
+.food-item section {
+    background-color: #272829;
+    border-radius: 1em;
+    width: 100%;
+    height: 100%;
+    margin: 2%;
+    text-align: center;
+    padding-bottom: 3%;
+    overflow: hidden;
+}
+.food-image {
+    height: 60%;
+    width: 100%;
+    border-radius: 1em;
+}
+
+.food-item h3 {
+    font-size: 30px;
+    color: #D71313;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.price-Item {
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    color: #D65A31;
+    font-weight: bold;
+}
+
+.description-item {
+    color: whitesmoke;
+    margin: 10px;
+}
+
+.food-item button {
+    margin-top: 8%;
+    padding: 2% 3%;
+    border-radius: 7px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.food-item button:active {
+    background-color: #D65A31;
+    color: white;
+    cursor: grab;
+}

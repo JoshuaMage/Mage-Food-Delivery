@@ -1,0 +1,105 @@
+body {
+  background-color: #3D3B40;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#mage-app {
+  height: 100%;
+  width: 100%;
+}
+
+#apps {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+
+  /* Example: Adjust header styles for mobile */
+  #header {
+    padding: 2.5% 3%;
+  }
+
+  h1 {
+    flex: .8;
+    font-size: 22px;
+    margin-left: 10px;
+  }
+
+  .header-input {
+    width: 120px;
+    /* Adjust width as per your design needs */
+  }
+
+  .logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    /* Adjust other mobile-specific styles as needed */
+  }
+
+  .cart {
+    font-size: 1.2em;
+    /* Adjust other mobile-specific styles */
+  }
+
+  /* Example: Adjust food menu grid for mobile */
+  .food-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Adjust grid columns as needed */
+    width: 100%;
+    /* Ensure full width */
+    gap: 2%;
+    justify-content: center;
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+   height: 100vh;
+    /* Adjust max height based on your layout */
+    padding: 5px;
+    box-sizing: border-box;
+
+  }
+
+  .food-image {
+    height: 50%;
+  }
+
+  .food-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center;
+    text-align: center; /* Center text and inline elements */
+  }
+
+  .food-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px
+  }
+
+  .price-item {
+    font-size: 15px;
+    margin-bottom: 5px;
+    /* Add margin below the price */
+  }
+
+  .description-item {
+    margin-top: 0px;
+    font-size: 15px;
+  }
+
+  .food-item button {
+    margin-top: auto; /* Use auto margin to push button to the bottom */
+   align-self: flex-end;
+  }
+}
