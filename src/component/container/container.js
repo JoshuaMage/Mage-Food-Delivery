@@ -17,7 +17,7 @@ export const FOOD_MENU = [
     img: image1,
     fname: "Barbeque",
     price: 20,
-    description: "Barbeque Flavor dummy recipes",
+    desrciption: "Barbeque Flavor dummy recipes",
     button: "Add to Cart",
   },
   {
